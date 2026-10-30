@@ -1,6 +1,9 @@
 """MCP server exposing the organiser as tools. Run: m365-organizer serve"""
 import json
-from mcp.server.fastmcp import FastMCP
+try:
+    from mcp.server.mcpserver import MCPServer as FastMCP  # mcp >= 2
+except ImportError:
+    from mcp.server.fastmcp import FastMCP  # mcp 1.x
 from .graph import Graph
 from . import mail, drive
 
