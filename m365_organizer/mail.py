@@ -73,8 +73,8 @@ def move_from_senders(g: Graph, senders, dest_path, folder="inbox"):
     dest = ensure_folder(g, dest_path)
     moved = 0
     for s in senders:
-        if s.startswith("@"):
-            flt = f"contains(from/emailAddress/address,'{s}')"
+        if s.startswith("@"):  # bare domain so sub-domains (mail@help.example.com) match too
+            flt = f"contains(from/emailAddress/address,'{s[1:]}')"
         else:
             flt = f"from/emailAddress/address eq '{s}'"
         moved += move_messages(g, message_ids(g, folder, filter=flt), dest)
@@ -94,7 +94,7 @@ def add_sender_rule(g: Graph, name, senders, dest_path, mark_read=False, stop=Tr
     if addresses:
         conditions["fromAddresses"] = [{"emailAddress": {"address": a}} for a in addresses]
     if domains:
-        conditions["senderContains"] = domains
+        conditions["senderContains"] = [d[1:] for d in domains]  # bare domain matches sub-domains
     actions = {"moveToFolder": dest, "stopProcessingRules": stop}
     if mark_read:
         actions["markAsRead"] = True
