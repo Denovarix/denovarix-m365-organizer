@@ -1,0 +1,16 @@
+{
+  "Jobs & Freelance/LinkedIn":        ["@linkedin.com"],
+  "Jobs & Freelance/Freelancer":      ["@notifications.freelancer.com", "@freelancer.com"],
+  "Jobs & Freelance/Upwork":          ["@upwork.com", "@email.upwork.com"],
+  "Jobs & Freelance/Job boards":      ["@jobs2web.com", "@naukri.com", "@indeed.com", "@monsterindia.com", "@pvademohire.onmicrosoft.com"],
+  "Finance/Banking":                  ["@axis.bank.in", "@axisbank.com", "@axisbankmail.com", "@axisbankmail.in", "@indusind.com", "@dbs.com", "@icicibank.com", "@nse.co.in"],
+  "Finance/Cards & Loans":            ["@bobcrd.com", "@mybobcard.co.in", "@bobcard.in", "@sbicard.com", "@tatacard.com", "@rupeeredee.com"],
+  "Finance/Payments & Investing":     ["@phonepe.com", "@paytmoffers.in", "@razorpay.com", "@indmoney.com", "@share.market", "@mail.stake.com", "@cleartax.in"],
+  "Social":                           ["@facebookmail.com"],
+  "Shopping & Deliveries":            ["@amazon.in", "@thesleepcompany.in", "@dermalogica.com", "@thetailgatetent.com", "@shopifyemail.com", "@asianpaints.com", "@asus.com"],
+  "Property":                         ["@magicbricks.com"],
+  "Travel & Utilities":               ["@uber.com", "@jio.com", "@airtel.com"],
+  "Entertainment":                    ["@primevideo.com", "@netflix.com"],
+  "Learning & Tools":                 ["@coursera.org", "@make.com", "@zapier.com", "@clickup.com", "@uipath.com", "@adobe.com", "@convertkit.com", "@startupwala.com"],
+  "Charity":                          ["@impactguru.com"]
+}
